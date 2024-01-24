@@ -13,7 +13,7 @@ const FooterSocials = (props: Props) => {
             <Facebook color='white'/>
             <Instagram color='white'/>
         </div>
-        <p className={`${generalSans.className} text-xs font-normal text-white mt-6`}>© 2020 Karcis incorporated</p>
+        <p className={`${generalSans.className} text-xs font-normal text-white mt-6`}>© 2020 EventHorizon incorporated</p>
     </div>
   )
 }
