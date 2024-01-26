@@ -1,8 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import heroLights from "../../assets/heroLights.svg";
-import heroPhotoFirst from "../../assets/heroPhotoFirst.svg";
-import heroPhotoSecond from "../../assets/heroPhotoSecond.svg";
+import heroPhotoFirst from "../../assets/heroPhotoFirst.png";
+import heroPhotoSecond from "../../assets/heroPhotoSecond.png";
+import fillerPhoto from '../../assets/fillerPhoto.png';
+import fillerPhoto2 from '../../assets/fillerPhoto2.png';
+import fillerPhoto3 from '../../assets/fillerPhoto3.png';
+import fillerPhoto4 from '../../assets/fillerPhoto4.png';
 import { Calendar, Search } from 'lucide-react';
 import { cabinetGrostek, generalSans } from "@/fonts/fonts";
 
@@ -10,8 +14,8 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="flex-col items-center h-min w-screen p-3">
-      <div className="flex items-center justify-between mb-4">
+    <div className="flex flex-col items-center h-min p-3">
+      <div className="flex items-center justify-between w-full mb-4">
         <Image src={heroLights} alt="discoLight" width={44} height={51} />
         <Image src={heroLights} alt="discoLight" width={44} height={51} />
       </div>
@@ -20,11 +24,15 @@ const Hero = (props: Props) => {
       >
         Exclusive events, priceless moments
       </h1>
-      <div className="flex items-center justify-center">
-      <Image src={heroPhotoFirst} alt="discoLight" width={148} height={112} />
-      <Image src={heroPhotoSecond} alt="discoLight" width={147} height={112} />
+      <div className="flex items-end justify-center">
+      <Image src={heroPhotoFirst} alt="discoLight" width={120} height={144} className="md: w-[300px]"/>
+      <Image src={fillerPhoto2} alt="fillerPhoto" width={171} height={144} className=" hidden 2xl:block"/>
+      <Image src={fillerPhoto} alt="fillerPhoto" width={151} height={144} className="hidden xl:block"/>
+      <Image src={fillerPhoto3} alt="fillerPhoto" width={176} height={144} className="hidden lg:block"/>
+      <Image src={fillerPhoto4} alt="fillerPhoto" width={120} height={144} className="hidden md:block"/>
+      <Image src={heroPhotoSecond} alt="discoLight" width={120} height={144} className="md: w-[300px]"/>
       </div>
-      <div className=" border-[1px] border-black w-full rounded-sm items-center justify-between p-1 flex">
+      <div className=" border-[1px] border-black rounded-sm items-center justify-between p-1 flex w-full max-w-5xl">
         <p className="text-[#1B1B25] ${generalSans.className} text-[0.625rem] font-normal">Search by events, name, etc.</p>
         <p className={`text-[#1B1B25] ${generalSans.className} text-[0.625rem] font-normal flex border-l-[1px] border-gray-500 gap-2 items-center`}>
             <Calendar color="black" className="ml-2"/>

@@ -8,7 +8,7 @@ type Props = {
 
 const HotOffers = (props: Props) => {
   return (
-    <div className='flex-col w-screen h-min p-4'>
+    <div className='flex-col h-min p-4'>
         <ComponentHeader title='Hot Offers'/>
         <Image src={props.image} alt='Hot Offers Image' width={253} height={150}/>
     </div>
