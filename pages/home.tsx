@@ -11,7 +11,7 @@ import BrowseConcert from '@/components/HomeComponents/BrowseConcertComponents/b
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <div className='flex flex-col items-center'>
       <Navbar />
       <Hero />
       <Upcoming />

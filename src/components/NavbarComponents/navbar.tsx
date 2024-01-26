@@ -7,7 +7,7 @@ type Props = {}
 
 const Navbar = (props: Props) => {
   return (
-    <div className='flex items-center justify-between p-6'>
+    <div className='flex items-center justify-between p-6 w-full'>
         <p className={`${cabinetGrostek.className} text-[#4F4CEE] text-2xl font-bold`}>EventHorizon.com</p>
         <Menu color='black' className='lg:hidden'/>
         <div className='hidden items-center justify-center gap-12 lg:flex'>
