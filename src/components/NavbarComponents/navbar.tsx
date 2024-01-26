@@ -10,7 +10,7 @@ const Navbar = (props: Props) => {
     <div className='flex items-center justify-between p-6'>
         <p className={`${cabinetGrostek.className} text-[#4F4CEE] text-2xl font-bold`}>EventHorizon.com</p>
         <Menu color='black' className='lg:hidden'/>
-        <div className='hidden items-center justify-center gap-4 lg:flex'>
+        <div className='hidden items-center justify-center gap-12 lg:flex'>
           <h5 className={`${cabinetGrostek.className} text-lg font-normal text-[#1B1B25]`}>Concerts</h5>
           <h5 className={`${cabinetGrostek.className} text-lg font-normal text-[#1B1B25]`}>Art</h5>
           <h5 className={`${cabinetGrostek.className} text-lg font-normal text-[#1B1B25]`}>Conference</h5>
