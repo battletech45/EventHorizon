@@ -7,6 +7,7 @@ import EventDetails from "./eventDetails";
 import TicketContainer from "./ticketContainer";
 import EventInfo from "./eventInfo";
 import Decsription from "./decsription";
+import TermsNcondition from "./termsNcondition";
 
 type Props = {
   image: StaticImageData;
@@ -46,6 +47,7 @@ const DetailHero = (props: Props) => {
       </div>
       <EventInfo />
       <Decsription desc="Drive-In Senja memberikan retro drive-in experience yang dikemas secara modern. Penggunaan transmisi radio kit, mengintegrasikan suara film ke dalam radio mobil, ditambah proyektor resolusi tinggi yang menyediakan pengalaman visual terbaik. Acara ini merupakan sarana yang aman untuk menghabiskan waktu bersama keluarga, pasangan, maupun komunitas" />
+      <TermsNcondition />
     </div>
   );
 };
