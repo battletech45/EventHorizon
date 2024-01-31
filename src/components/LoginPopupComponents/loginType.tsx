@@ -9,7 +9,7 @@ type Props = {
 
 const LoginType = (props: Props) => {
   return (
-    <div className={`flex items-center justify-center w-full p-4 border-b-4 ${props.isSelected ? 'border-[#4F4CEE]' : 'border-[#BDBDBD]'}`} onClick={() => props.setSelected(!props.isSelected)}>
+    <div className={`flex items-center justify-center w-full p-4 border-b-4 ${props.isSelected ? 'border-[#4F4CEE]' : 'border-[#BDBDBD]'}`} onClick={() => props.setSelected(props.title === 'Guest' ? props.isSelected : !props.isSelected)}>
         <h5 className={`${cabinetGrostek.className} text-base font-semibold ${props.isSelected ? 'text-[#4F4CEE]' : 'text-[#BDBDBD]'}`}>
           {props.title}
         </h5>
