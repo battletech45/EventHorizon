@@ -19,8 +19,8 @@ const FooterMenuSection: React.FC<Props> = (props: Props) => {
         <ChevronDown color='white' className='lg:hidden'/>
         <div className='hidden lg:flex flex-col'>
           {
-            props.menuContent.map((item) => (
-              <p className={`text-white ${generalSans.className} text-base font-normal my-2`}>
+            props.menuContent.map((item, index) => (
+              <p className={`text-white ${generalSans.className} text-base font-normal my-2`} key={index}>
                 {item}
               </p>
             ))

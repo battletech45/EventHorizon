@@ -43,11 +43,12 @@ const LoginPopup: React.FC<Props> = (props: Props) => {
     <Modal
       isOpen={props.isOpen}
       className={"flex items-center justify-center w-screen h-screen p-4 bg-[#00000061]"}
+      onRequestClose={() => props.setIsOpen(!props.isOpen)}
     >
       <form onSubmit={handleSubmit}>
       <div
         className="flex flex-col items-center w-[42rem] max-h-[41rem] bg-white rounded overflow-hidden"
-        /* onClick={() => props.setIsOpen(!props.isOpen)} */
+        onClick={() => props.setIsOpen(!props.isOpen)}
       >
         <div className="flex items-center justify-center p-4 w-full bg-[#4F4CEE]">
           <h1 className={`${cabinetGrostek.className} text-white text-4xl font-bold`}>
