@@ -5,9 +5,9 @@ type Props = {}
 
 const LoginButton = (props: Props) => {
   return (
-    <div className='flex items-center justify-center px-4 py-2 bg-[#DADAFB] rounded w-2/4 my-2'>
+    <button className='flex items-center justify-center px-4 py-2 bg-[#DADAFB] rounded w-2/4 my-4' type='submit'>
         <p className={`${generalSans.className} text-sm font-normal text-white`}>Continue</p>
-    </div>
+    </button>
   )
 }
 
