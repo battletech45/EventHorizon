@@ -4,12 +4,14 @@ import React, { useState } from 'react';
 import "../src/app/globals.css";
 import DetailHero from '@/components/EventDetailComponents/detailHero';
 import eventPhoto from '../src/assets/eventPhoto.png';
+import LoginPopup from '@/components/LoginPopupComponents/loginPopup';
 
 const EventDetail: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <div className='flex flex-col items-center'>
-        <Navbar isOpen={isOpen} setIsOpen={setIsOpen}/>
+        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} isSearch={false}/>
+        <LoginPopup isOpen={isOpen} setIsOpen={setIsOpen}/> 
         <DetailHero image={eventPhoto}/>
         <Footer />
     </div>

@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
   
   return (
     <div className='flex flex-col items-center'>
-      <Navbar isOpen={isOpen} setIsOpen={setIsOpen}/>
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} isSearch={false}/>
       <Hero />
       <Upcoming />
       <LoginPopup isOpen={isOpen} setIsOpen={setIsOpen}/>
