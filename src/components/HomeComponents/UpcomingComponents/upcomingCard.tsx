@@ -10,6 +10,8 @@ type Props = {
   title: string;
   price: string;
   location: string;
+  category: string | null;
+  search: string | null;
 };
 
 const UpcomingCard = (props: Props) => {
@@ -24,6 +26,9 @@ const UpcomingCard = (props: Props) => {
           <p>{props.dateDay}</p>
         </div>
         <div className="flex-col items-start justify-center gap-4">
+          <p className={`${generalSans.className} ${props.category === null || props.search === null ? 'hidden' : 'block'} text-base font-medium text-[#4f4cee]`}>
+            {props.category! + props.search!}
+          </p>
           <p
             className={`${generalSans.className} text-[#1B1B25] text-xs md:text-base font-medium`}
           >

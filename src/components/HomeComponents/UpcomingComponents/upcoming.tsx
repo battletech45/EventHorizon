@@ -10,12 +10,12 @@ const Upcoming = (props: Props) => {
     <div className='flex flex-col h-min px-4 max-w-7xl w-full'>
         <ComponentHeader title='Upcoming Events'/>
         <div className='flex items-center justify-start gap-8 overflow-x-scroll'>
-        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD'/>
-        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD'/>
-        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD'/>
-        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD'/>
-        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD'/>
-        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD'/>
+        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD' search={null} category={null}/>
+        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD' search={null} category={null}/>
+        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD' search={null} category={null}/>
+        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD' search={null} category={null}/>
+        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD' search={null} category={null}/>
+        <UpcomingCard imageURL={card} title='Panic! at the Disco' dateDay='01' dateMonth='NOV' price='450.000 - 975.000' location='The Icon, BSD' search={null} category={null}/>
         </div>   
     </div>
   )

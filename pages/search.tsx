@@ -3,6 +3,7 @@ import Navbar from '@/components/NavbarComponents/navbar'
 import React, { useState } from 'react';
 import "../src/app/globals.css";
 import Filter from '@/components/SearchComponents/FilterComponents/filter';
+import Footer from '@/components/FooterComponents/footer';
 
 type Props = {}
 
@@ -17,6 +18,7 @@ const Search = (props: Props) => {
         <div className='flex items-start justify-start'>
           <Filter />
         </div>
+        <Footer />
     </div>
   )
 }
