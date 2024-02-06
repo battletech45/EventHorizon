@@ -14,7 +14,9 @@ const ResultGrid = (props: Props) => {
           "${props.search}"
         </span>
       </h1>
-      <div></div>
+      <div className="grid gap-x-16 grid-cols-1 place-items-center">
+        {}
+      </div>
     </div>
   );
 };
