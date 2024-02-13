@@ -7,7 +7,7 @@ type Props = {}
 
 const Filter = (props: Props) => {
   return (
-    <div className='flex flex-col items-start justify-center p-4 border-[3px] w-[204px] gap-6 mt-12'>
+    <div className='flex flex-col items-start justify-center p-4 border-[3px] gap-6 mt-12'>
         <h4 className={`${generalSans.className} text-xl text-left text-[#1b1b25] font-medium`}>Filters</h4>
         <FilterSwitch />
         <FilterMenu title='Location' options={['International', 'Jakarta Selatan', 'Jakarta Timur', 'Tangerang Selatan', 'Jabodetabek']}/>

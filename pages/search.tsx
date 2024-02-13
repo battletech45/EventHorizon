@@ -16,7 +16,7 @@ const Search = (props: Props) => {
     <div className='flex flex-col items-center gap-12'>
         <Navbar isOpen={isOpen} setIsOpen={setIsOpen} isSearch={true}/>
         <LoginPopup isOpen={isOpen} setIsOpen={setIsOpen}/>
-        <div className='flex items-start justify-between w-full'>
+        <div className='flex items-start justify-center gap-12 w-full'>
           <Filter />
           <ResultGrid search='Drive In'/>
         </div>
