@@ -4,6 +4,7 @@ import "../src/app/globals.css";
 import TicketBackHeader from "@/components/TicketOptionsComponents/TicketBackHeader";
 import TicketInfo from "@/components/TicketOptionsComponents/ticketInfo";
 import PacketSelections from "@/components/TicketOptionsComponents/packetSelections";
+import PacketInfo from "@/components/TicketOptionsComponents/packetInfo";
 
 type Props = {};
 
@@ -15,12 +16,7 @@ const Options = (props: Props) => {
       <div className="flex flex-col px-[120px] gap-12">
         <TicketBackHeader />
         <TicketInfo />
-        <PacketSelections
-          title="Paket VIP"
-          data="1 Tiket Mobil (maks. 2 orang) 2 Burger Senja & Fries, 2 Teh Senja, 1 Voucher Merchandise Spot 
-dan pelayanan VIP Sesi foto"
-          price="371.000"
-        />
+        <PacketInfo />
       </div>
     </div>
   );
