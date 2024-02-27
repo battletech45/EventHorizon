@@ -11,7 +11,7 @@ type Props = {
 
 const EventDetails = (props: Props) => {
   return (
-    <div className='flex flex-col items-start max-w-xl gap-4'>
+    <div className='flex flex-col items-center md:items-start max-w-xl gap-4'>
         <h2 className={`${cabinetGrostek.className} text-3xl font-bold text-[#1B1B25]`}>{props.title}</h2>
         <p className={`text-[#1B1B25] flex items-center justify-center gap-2 ${generalSans.className}`}>
             <MapPin color='black'/>
@@ -21,7 +21,7 @@ const EventDetails = (props: Props) => {
             <Calendar color='black'/>
             {props.date}
         </p>
-        <h5 className={`text-[#1B1B25] ${generalSans.className} text-lg font-normal`}>
+        <h5 className={`text-[#1B1B25] ${generalSans.className} text-lg font-normal text-center md:text-start`}>
             {props.details}
         </h5>
     </div>

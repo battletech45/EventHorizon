@@ -7,7 +7,7 @@ type Props = {};
 
 const TicketInfo = (props: Props) => {
   return (
-    <div className="flex items-center justify-center gap-16">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-16">
       <Image src={photo} alt="ticketPhoto" width={507} height={240} />
       <EventDetails
         title="Drive In Senja: Back to the Future"
