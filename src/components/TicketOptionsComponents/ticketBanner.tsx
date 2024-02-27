@@ -1,6 +1,7 @@
 import { generalSans } from '@/fonts/fonts'
 import { useTicket } from '@/stores/ticketStore'
 import React from 'react'
+import TicketSelectedBanner from './ticketSelectedBanner'
 
 type Props = {}
 
@@ -10,7 +11,7 @@ const TicketBanner = (props: Props) => {
   return (
     <div className='flex items-center justify-center bg-[#7f7df3] w-full p-6'>
       {isTicketSelected ?
-      <p className={`${generalSans.className} text-xl text-[#fff] font-medium`}>{TicketCount} Ticket(s) selected</p>
+      <TicketSelectedBanner />
       : 
         <p className={`${generalSans.className} text-xl text-[#fff] font-medium`}>Choose your ticket and quantity</p>
       }
