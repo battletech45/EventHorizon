@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "../src/app/globals.css";
 import TicketBackHeader from "@/components/TicketOptionsComponents/TicketBackHeader";
 import TicketInfo from "@/components/TicketOptionsComponents/ticketInfo";
-import PacketSelections from "@/components/TicketOptionsComponents/packetSelections";
 import PacketInfo from "@/components/TicketOptionsComponents/packetInfo";
 import TicketBanner from "@/components/TicketOptionsComponents/ticketBanner";
 
